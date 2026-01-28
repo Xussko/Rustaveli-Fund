@@ -194,7 +194,8 @@ main {
 .poster-downloads ul,
 .presentation-downloads__list,
 .video-downloads__list,
-.pdf-downloads__list {
+.pdf-downloads__list,
+.word-downloads__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -206,7 +207,8 @@ main {
 .poster-downloads__item a,
 .presentation-downloads__item a,
 .video-downloads__item a,
-.pdf-downloads__item a {
+.pdf-downloads__item a,
+.word-downloads__item a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -221,7 +223,8 @@ main {
 .poster-downloads__item a::before,
 .presentation-downloads__item a::before,
 .video-downloads__item a::before,
-.pdf-downloads__item a::before {
+.pdf-downloads__item a::before,
+.word-downloads__item a::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -249,6 +252,13 @@ main {
   width: 34px;
 }
 
+.word-downloads__item a::before {
+  content: "WORD";
+  width: 44px;
+  border-color: #1a73e8;
+  color: #1a73e8;
+}
+
 .video-downloads__item a::before {
   content: "VIDEO";
   width: 44px;
@@ -261,7 +271,9 @@ main {
 .video-downloads__item a:hover,
 .video-downloads__item a:focus,
 .pdf-downloads__item a:hover,
-.pdf-downloads__item a:focus {
+.pdf-downloads__item a:focus,
+.word-downloads__item a:hover,
+.word-downloads__item a:focus {
   border-color: #bfbfbf;
 }
 
