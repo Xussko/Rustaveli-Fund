@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>მოხსენებები</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <div class="site-header__logo">
+          <svg
+            viewBox="0 0 64 64"
+            role="img"
+            aria-label="სამედიცინო სიმბოლო"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="12" y="12" width="40" height="40" rx="6" fill="#f0f0f0" stroke="#111111" />
+            <rect x="29" y="20" width="6" height="24" fill="#111111" />
+            <rect x="20" y="29" width="24" height="6" fill="#111111" />
+          </svg>
+          <span>პროექტის ჰაბი</span>
+        </div>
+        <nav class="site-header__nav" aria-label="მთავარი ნავიგაცია">
+          <a href="mokhsenebebi.html">მოხსენებები</a>
+          <a href="index.html#posters">პოსტერები</a>
+          <a href="proeqtis-aghwera.html">პროექტის აღწერა</a>
+          <a href="mimdinareoba.html">პროექტის განხორციელების მიმდინარეობა</a>
+          <a href="statiebi.html">სტატიები</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="hero__title">მოხსენებები</h1>
+          <p>
+            აქ შეგიძლიათ იხილოთ პირველი პრეზენტაცია სლაიდების ფორმატში. მეორე
+            პრეზენტაციის სლაიდერი დაემატება მოგვიანებით.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">2nd World Congress on Cancer R&amp;T</h2>
+          <div
+            class="presentation-slider"
+            data-folder="assets/images/2nd-world-congress-on-cancer-rt"
+            data-count="23"
+            data-extension="jpg"
+          >
+            <div class="presentation-slider__viewport">
+              <div class="presentation-slider__track"></div>
+            </div>
+            <div class="presentation-slider__controls">
+              <button class="presentation-slider__button" type="button" data-action="prev">
+                წინა სლაიდი
+              </button>
+              <div class="presentation-slider__counter" aria-live="polite"></div>
+              <button class="presentation-slider__button" type="button" data-action="next">
+                შემდეგი სლაიდი
+              </button>
+            </div>
+            <div class="presentation-slider__dots" role="tablist"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">პროექტის საკონტაქტო ინფორმაცია და წელი — 2024</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
