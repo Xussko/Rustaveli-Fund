@@ -151,18 +151,22 @@ main {
 .posters-gallery {
   display: grid;
   gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
 }
 
 .poster-figure {
   margin: 0;
   border: 1px solid var(--border-color);
-  padding: 16px;
+  padding: 12px;
   background: #ffffff;
 }
 
 .poster-figure img {
   width: 100%;
   height: auto;
+  max-height: 520px;
+  object-fit: contain;
   display: block;
   border: 1px solid var(--border-color);
 }
@@ -185,11 +189,43 @@ main {
 
 .poster-downloads ul {
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  max-width: 520px;
 }
 
-.poster-downloads a {
+.poster-downloads__item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  font-size: 14px;
   font-weight: 600;
+  background: #ffffff;
+  line-height: 1.3;
+}
+
+.poster-downloads__item a::before {
+  content: "PDF";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 20px;
+  border: 1px solid #d12c2c;
+  color: #d12c2c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.poster-downloads__item a:hover,
+.poster-downloads__item a:focus {
+  border-color: #bfbfbf;
 }
 
 .poster-card {
@@ -391,5 +427,9 @@ main {
 
   .hero__title {
     font-size: 26px;
+  }
+
+  .posters-gallery {
+    grid-template-columns: 1fr;
   }
 }
