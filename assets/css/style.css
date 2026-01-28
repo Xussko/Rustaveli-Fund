@@ -186,33 +186,37 @@ main {
   font-size: 18px;
 }
 
-.poster-downloads ul {
+.poster-downloads ul,
+.presentation-downloads__list,
+.video-downloads__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
   gap: 10px;
-  max-width: 520px;
+  max-width: 560px;
 }
 
-.poster-downloads__item a {
+.poster-downloads__item a,
+.presentation-downloads__item a,
+.video-downloads__item a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   border: 1px solid var(--border-color);
   padding: 8px 12px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   background: #ffffff;
   line-height: 1.3;
 }
 
-.poster-downloads__item a::before {
-  content: "PDF";
+.poster-downloads__item a::before,
+.presentation-downloads__item a::before,
+.video-downloads__item a::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
   height: 20px;
   border: 1px solid #d12c2c;
   color: #d12c2c;
@@ -222,8 +226,27 @@ main {
   text-transform: uppercase;
 }
 
+.poster-downloads__item a::before {
+  content: "PDF";
+  width: 34px;
+}
+
+.presentation-downloads__item a::before {
+  content: "PPT";
+  width: 34px;
+}
+
+.video-downloads__item a::before {
+  content: "VIDEO";
+  width: 44px;
+}
+
 .poster-downloads__item a:hover,
-.poster-downloads__item a:focus {
+.poster-downloads__item a:focus,
+.presentation-downloads__item a:hover,
+.presentation-downloads__item a:focus,
+.video-downloads__item a:hover,
+.video-downloads__item a:focus {
   border-color: #bfbfbf;
 }
 
@@ -287,6 +310,10 @@ main {
 .video-gallery {
   display: grid;
   gap: 24px;
+}
+
+.video-downloads {
+  margin-top: 16px;
 }
 
 .video-card {
