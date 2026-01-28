@@ -151,7 +151,6 @@ main {
 .posters-gallery {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
 }
 
@@ -165,11 +164,10 @@ main {
 .poster-figure img {
   width: 100%;
   height: auto;
-  max-height: 520px;
+  max-height: none;
   object-fit: contain;
   display: block;
   border: 1px solid var(--border-color);
-  cursor: zoom-in;
 }
 
 .poster-figure figcaption {
@@ -427,9 +425,5 @@ main {
 
   .hero__title {
     font-size: 26px;
-  }
-
-  .posters-gallery {
-    grid-template-columns: 1fr;
   }
 }

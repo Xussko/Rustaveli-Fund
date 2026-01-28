@@ -3,7 +3,6 @@ const modal = document.querySelector(".modal");
 const modalTitle = document.querySelector(".modal__title");
 const modalImage = document.querySelector(".modal__image");
 const closeButton = document.querySelector(".modal__close");
-const posterImages = document.querySelectorAll(".poster-figure img");
 
 const toggleHeader = () => {
   if (!header) {
@@ -19,16 +18,12 @@ const toggleHeader = () => {
 toggleHeader();
 window.addEventListener("scroll", toggleHeader);
 
-const openModal = (title, imageSrc) => {
+const openModal = (title) => {
   if (!modal) {
     return;
   }
   if (modalTitle) {
     modalTitle.textContent = title;
-  }
-  if (modalImage && imageSrc) {
-    modalImage.src = imageSrc;
-    modalImage.alt = title;
   }
   modal.classList.add("is-open");
   document.body.classList.add("no-scroll");
@@ -42,12 +37,7 @@ const closeModal = () => {
   document.body.classList.remove("no-scroll");
 };
 
-posterImages.forEach((image) => {
-  image.addEventListener("click", () => {
-    const title = image.alt || "პოსტერი";
-    openModal(title, image.src);
-  });
-});
+// Poster zoom disabled.
 
 if (closeButton) {
   closeButton.addEventListener("click", closeModal);
