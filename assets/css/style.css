@@ -284,6 +284,29 @@ main {
   font-weight: 600;
 }
 
+.video-gallery {
+  display: grid;
+  gap: 24px;
+}
+
+.video-card {
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  background: #ffffff;
+}
+
+.video-card video {
+  width: 100%;
+  max-height: 520px;
+  background: #000000;
+  display: block;
+}
+
+.video-card h3 {
+  margin: 12px 0 0;
+  font-size: 16px;
+}
+
 .footer {
   border-top: 1px solid var(--border-color);
   padding: 24px 0;
