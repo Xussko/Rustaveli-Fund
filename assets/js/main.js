@@ -3,7 +3,7 @@ const modal = document.querySelector(".modal");
 const modalTitle = document.querySelector(".modal__title");
 const modalImage = document.querySelector(".modal__image");
 const closeButton = document.querySelector(".modal__close");
-const posterButtons = document.querySelectorAll(".poster-card");
+const posterImages = document.querySelectorAll(".poster-figure img");
 
 const toggleHeader = () => {
   if (!header) {
@@ -19,12 +19,17 @@ const toggleHeader = () => {
 toggleHeader();
 window.addEventListener("scroll", toggleHeader);
 
-const openModal = (title) => {
+const openModal = (title, imageSrc) => {
   if (!modal) {
     return;
   }
-  modalTitle.textContent = title;
-  modalImage.textContent = title;
+  if (modalTitle) {
+    modalTitle.textContent = title;
+  }
+  if (modalImage && imageSrc) {
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+  }
   modal.classList.add("is-open");
   document.body.classList.add("no-scroll");
 };
@@ -37,10 +42,10 @@ const closeModal = () => {
   document.body.classList.remove("no-scroll");
 };
 
-posterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const title = button.dataset.title || "პოსტერი";
-    openModal(title);
+posterImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    const title = image.alt || "პოსტერი";
+    openModal(title, image.src);
   });
 });
 

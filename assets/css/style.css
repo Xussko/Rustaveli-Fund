@@ -169,6 +169,7 @@ main {
   object-fit: contain;
   display: block;
   border: 1px solid var(--border-color);
+  cursor: zoom-in;
 }
 
 .poster-figure figcaption {
@@ -317,14 +318,11 @@ main {
 }
 
 .modal__image {
-  background: var(--bg-light);
-  border: 1px dashed #c7c7c7;
-  height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666666;
-  font-weight: 600;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border: 1px solid var(--border-color);
+  background: #ffffff;
   margin-bottom: 16px;
 }
 
@@ -368,7 +366,9 @@ main {
 
 .presentation-slider__slide img {
   width: 100%;
+  max-height: 520px;
   height: auto;
+  object-fit: contain;
   border: 1px solid var(--border-color);
   background: #ffffff;
 }
