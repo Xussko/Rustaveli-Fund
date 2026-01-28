@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>პროექტის ჰაბი</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <div class="site-header__logo">
+          <svg
+            viewBox="0 0 64 64"
+            role="img"
+            aria-label="სამედიცინო სიმბოლო"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="12" y="12" width="40" height="40" rx="6" fill="#f0f0f0" stroke="#111111" />
+            <rect x="29" y="20" width="6" height="24" fill="#111111" />
+            <rect x="20" y="29" width="24" height="6" fill="#111111" />
+          </svg>
+          <span>პროექტის ჰაბი</span>
+        </div>
+        <nav class="site-header__nav" aria-label="მთავარი ნავიგაცია">
+          <a href="mokhsenebebi.html">მოხსენებები</a>
+          <a href="#posters">პოსტერები</a>
+          <a href="proeqtis-aghwera.html">პროექტის აღწერა</a>
+          <a href="mimdinareoba.html">პროექტის განხორციელების მიმდინარეობა</a>
+          <a href="statiebi.html">სტატიები</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="hero__title">პროექტის სათაური</h1>
+          <p class="hero__text">
+            პროექტის მოკლე აღწერა ქართულ ენაზე, რომელიც მკაფიოდ და პროფესიონალურად
+            ასახავს კვლევის ან ინიციატივის არსს. აქ შეგიძლიათ დაამატოთ ორი მოკლე
+            წინადადება სტუმრებისთვის.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="posters">
+        <div class="container">
+          <h2 class="section__title">პოსტერები</h2>
+          <div class="posters-gallery">
+            <figure class="poster-figure">
+              <img src="assets/images/poster1.jpg" alt="პოსტერი 1" />
+              <figcaption>პოსტერი 1</figcaption>
+            </figure>
+            <figure class="poster-figure">
+              <img src="assets/images/poster2.jpg" alt="პოსტერი 2" />
+              <figcaption>პოსტერი 2</figcaption>
+            </figure>
+          </div>
+          <div class="poster-downloads">
+            <h3>პოსტერების PDF ფაილები</h3>
+            <ul>
+              <li>
+                <a href="assets/docs/P17- Alternative optical techniques for assessing the aggressiveness of prostate.pdf">
+                  P17- Alternative optical techniques for assessing the aggressiveness of prostate
+                </a>
+              </li>
+              <li>
+                <a href="assets/docs/Partsvania B Poster.pdf">Partsvania B Poster</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">მიმოხილვები და მასალები</h2>
+          <div class="teasers">
+            <article class="teaser-card">
+              <h3>მოხსენებები</h3>
+              <p>მიმდინარე პროექტის ძირითადი მოხსენებების მოკლე აღწერა და თემები.</p>
+              <a href="mokhsenebebi.html">ნახვა</a>
+            </article>
+            <article class="teaser-card">
+              <h3>პროექტის აღწერა</h3>
+              <p>პროექტის მიზნები, პარტნიორები და მეთოდოლოგია.</p>
+              <a href="proeqtis-aghwera.html">ნახვა</a>
+            </article>
+            <article class="teaser-card">
+              <h3>პროექტის განხორციელების მიმდინარეობა</h3>
+              <p>ეტაპები, მიღწევები და მიმდინარე სტატუსი.</p>
+              <a href="mimdinareoba.html">ნახვა</a>
+            </article>
+            <article class="teaser-card">
+              <h3>სტატიები</h3>
+              <p>კვლევითი და საგანმანათლებლო სტატიების არქივი.</p>
+              <a href="statiebi.html">ნახვა</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">პროექტის საკონტაქტო ინფორმაცია და წელი — 2024</div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__content">
+        <div class="modal__image">პოსტერი</div>
+        <h3 class="modal__title">პოსტერი</h3>
+        <button class="modal__close" type="button">დახურვა</button>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
